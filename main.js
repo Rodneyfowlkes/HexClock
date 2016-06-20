@@ -1,0 +1,31 @@
+var seconds = 0;
+var minutes = 0;
+var hours = 0;
+var now = new Date();
+
+
+sec_adder = function() {
+	seconds += 1;
+var date_sec = seconds % 60; 
+now.setSeconds(date_sec);
+
+if (date_sec == 0) {minutes += 1;};
+var date_min = minutes % 60;
+now.setMinutes(date_min);
+
+if (date_min == 0) {hours += 1;};
+var date_hours = hours % 60;
+now.setHours(date_min);
+
+
+document.querySelector(".clock").textContent = now;
+console.log(date_sec);
+document.querySelector(".hours").textContent = now.getHours();
+document.querySelector(".minutes").textContent = now.getMinutes();
+document.querySelector(".seconds").textContent = now.getSeconds();
+};
+
+setInterval(sec_adder,1000);
+
+
+

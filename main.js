@@ -1,7 +1,7 @@
 var now = new Date();
 var seconds = now.getSeconds();
 var minutes = now.getMinutes();
-var hours = now.getHours() - 12;
+var hours = now.getHours();
 
 
 

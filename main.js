@@ -1,7 +1,8 @@
-var seconds = 0;
-var minutes = 0;
-var hours = 0;
 var now = new Date();
+var seconds = now.getSeconds();
+var minutes = now.getMinutes();
+var hours = now.getHours() - 12;
+
 
 
 sec_adder = function() {

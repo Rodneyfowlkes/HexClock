@@ -1,0 +1,14 @@
+.clock_div {
+  margin: 0vw auto;
+  height: 30vw;
+  background-color: #57443D;
+  width: 40vw; }
+
+.clock_text {
+  text-align: center;
+  font-size: 600%;
+  width: 20vw;
+  font-family: 'Covered By Your Grace', cursive;
+  margin: 0vw auto;
+  padding-top: 10vw;
+  color: #DAD0C9; }
